@@ -1,0 +1,327 @@
+.sections {
+  display: flex;
+  justify-content: space-between;
+}
+body{
+  font-family: "Noto Sans", sans-serif;
+}
+
+.Icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5px;
+  margin-right: 10px;
+  background: rgba(255, 255, 255, 1);
+  padding: 4px;
+  box-shadow: 1px 0px 5px 0px rgba(168, 168, 168, 0.25);
+  font-size: 16px;
+
+  .home,
+  .dashboard,
+  .cube,
+  .mail,
+  .time,
+  .calendar,
+  .money-bill,
+  .message,
+  .bell,
+  .settings,
+  .sign-out,
+  .account,
+  .user {
+    height: 15px;
+    width: 15px;
+    fill: rgba(113, 131, 155, 1);
+  }
+
+  .Icons .image {
+    width: 60px;
+    height: 62px;
+  }
+
+  // Add styles for hovered state of each icon class
+  .home.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .dashboard.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .cube.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .mail.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .time.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .calendar.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .money-bill.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .message.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .bell.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .settings.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .sign-out.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .account.hovered {
+    fill: rgba(49, 88, 229, 1);
+  }
+
+  .user.hovered {
+    border: 2px solid rgba(49, 88, 229, 1); // Add any style you want for the hovered state of the user icon
+  }
+}
+
+.Icons .image {
+  width: 60px;
+  height: 62px;
+}
+
+.Icons .image {
+  width: 60px;
+  height: 62px;
+}
+
+// .emailSection {
+//   width: 65%;
+// }
+
+.recentSection {
+  width: 35%; // Adjust the width as needed
+  padding-left: 20px;
+  margin: -10px auto auto 0; // Adjust margin to span the full width
+
+  .h5 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+}
+
+.recentHeading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.recentHeading h3 {
+  margin-right: 10px;
+}
+
+.activity-details {
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  /* Dropdown styling */
+}
+
+.back-arrow-container {
+  text-align: right;
+  margin-right: 20px; // Adjust as needed
+}
+
+
+
+
+.page-no {
+  // font-family: "Overused Grotesk";
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 23.57px;
+  text-align: right;
+  color: rgba(153, 153, 153, 1);
+
+}
+
+
+.email-section {
+  // border-right: 1px solid #ccc; // Add border to the right side of the email section
+
+  padding: 20px;
+  width: 100%;
+  margin-left: -24px;
+  margin-bottom: -22px;
+
+  .email-container {
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.3s ease;
+   
+    .subject-container {
+      display: flex;
+      align-items: center;
+    }
+
+    .email-subject {
+      flex: 1;
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      
+
+    }
+
+    .more-icon {
+      margin-left: auto;
+    }
+
+    .sender-info {
+      display: flex;
+      justify-content: space-between; // Aligns details and timing to opposite sides
+      align-items: center;
+      width: 100%;
+      font-size: 16px;
+      margin-top: -25px;
+      margin-bottom: 10px;
+
+      .sender-image {
+        margin-right: 10px;
+
+        img {
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          margin-top: 15px;
+          margin-left: 46px;
+          margin-bottom: -9px;
+        }
+      }
+
+      .sender-details {
+        flex: 1; // Allows this div to grow and fill available space
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        // font-family: "Overused Grotesk";
+
+        .name-and-email {
+          display: flex;
+          align-items: center;
+          // font-family: "Overused Grotesk";
+
+          .sender-name {
+            font-weight: bold;
+            margin-right: 10px;
+            font-size: 14px;
+            // font-family: "Overused Grotesk";
+
+          }
+
+          .sender-email {
+            color: rgba(153, 153, 153, 1);
+            font-size: 12px;
+            // font-family: "Overused Grotesk";
+          }
+        }
+
+        .recipient {
+          margin-top: 1px;
+          color: rgba(153, 153, 153, 1);
+          font-size: 12px;
+          // font-family: "Overused Grotesk";
+
+        }
+      }
+
+      .email-timing {
+        display: flex;
+        text-align: right;
+        align-items: flex-end;
+        font-size: 10px;
+        color: rgba(153, 153, 153, 1);
+        margin-top: -37px;
+        // font-family: "Overused Grotesk";
+        margin-left: "487px";
+
+        span {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    .email-body {
+      span {
+        margin-bottom: 10px;
+        // font-family: "Overused Grotesk";
+      }
+
+      p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+        margin-left: 55px;
+        font-size: 14px;
+        // font-family: "Overused Grotesk";
+      }
+
+      .reply-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 20%;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+          background-color: #0056b3;
+        }
+
+        .reply-text {
+          margin-left: 8px; // Space between icon and text
+          font-size: 0.85em; // Reduce font size
+        }
+      }
+
+    }
+
+
+
+
+
+  }
+
+  .horizontal-line {
+    background-color: rgba(220, 231, 253, 1);
+    height: 1px;
+    margin: 10px 0;
+    border: none;
+  }
+}
+
+.recent-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  font-size: 16px;
+  // font-family: "Overused Grotesk";
+
+}
+
+.sender-name {
+  margin-top: "25px";
+}
